@@ -6,7 +6,9 @@
 
 public class FindPivotIndex {
     public static void main(String[] args){
-        int[] arr = {-1,-1,-1,-1,-1,0} ;
+        int[] arr = {-5,1,5,0,-7} ;
+//        int[] answe = ans(arr);
+//        System.out.println(ans(arr));
 
     }
     static int pivotIndex(int[] nums){
@@ -18,5 +20,7 @@ public class FindPivotIndex {
         }
         return -1;
     }
+
+
 
 }
