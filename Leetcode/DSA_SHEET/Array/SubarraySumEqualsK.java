@@ -1,6 +1,8 @@
 import java.util.HashMap;
 
 // leetcode question :- 560 https://leetcode.com/problems/subarray-sum-equals-k/
+// this question could have done using sliding window technique but  this technique does not work with negative number
+
 public class SubarraySumEqualsK {
     public static void main(String[] args){
             int[] array = {-1,-1,1};
