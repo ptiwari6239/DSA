@@ -9,7 +9,7 @@
 // the rest of characters
 
 public class ValidPalindromeII {
-    public static void main(String[] args){
+    public static void main(String []args){
         String s = "abc";
         System.out.println(ValidPalindrome(s));
     }
@@ -25,15 +25,15 @@ public class ValidPalindromeII {
         }
         return true;
     }
-    static boolean search_inside(String s, int i , int j ){
-        while(i<j){
-            if(s.charAt(i)!=s.charAt(j))
-                return false;
-            i++;
-            j--;
-        }
-        return true;
+        static boolean search_inside(String s, int i , int j ){
+            while(i<j){
+                if(s.charAt(i)!=s.charAt(j))
+                    return false;
+                i++;
+                j--;
+            }
+            return true;
 
-    }
+        }
 
 }
