@@ -3,25 +3,32 @@
 // this question is based on sliding window and prefix sum
 
 public class MaxConsecutiveOnesIII {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        int[] nums = {1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0};
+//        System.out.println(longesOnes(nums,2));
     }
-     static int longesOnes(int[] nums, int k ){
-        int i = 0 ;
-        int j = 0 ;
-        int ans = 0 ;
-        int count = 0 ;
-        while(j<nums.length){
-            if(nums[j]==0)       // move forward
+
+    static int longone(int[] nums, int k) {
+
+        int i = 0;
+        int j = 0;
+        int ans = 0;
+        int count = 0;
+        while (j < nums.length) {
+            if (nums[j] == 0)
                 count++;
-            while(count>k){
-                if(nums[i]==0)   // i is the pointer to the zero which is to be removed
+            while (count > k) {
+                if (nums[i] == 0)
                     count--;
                 i++;
             }
-            ans = Math.max(ans,j-i+1);
-            j++;
+            ans = Math.max(ans, j - i + 1);
+
+
         }
         return ans;
-     }
-
+    }
 }
+
+
+
