@@ -1,15 +1,12 @@
 public class Main {
     public static void main(String[] args){
-       MinStack st = new MinStack();
-       st.push(512);
-       st.push(-1024);
-       st.push(-1024);
-       st.push(512);
-       st.pop();
-        System.out.println(st.getMin());
-        st.pop();
-        System.out.println(st.getMin());
-        st.pop();
-        System.out.println(st.getMin());
+      ImplementQueueusingStacks st = new ImplementQueueusingStacks();
+      st.push(1);
+      st.push(2);
+      System.out.println(st.peek());
+      System.out.println(st.pop());
+      System.out.println(st.empty());
+
+
     }
 }
