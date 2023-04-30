@@ -6,7 +6,7 @@ public class MissingNumber {
         int[] arr = {0,1,3};
         System.out.println(missing(arr));
     }
-    // simple and brute force approch
+    // simple and brute force approach
     static int missingNumber(int[] nums){
         Arrays.sort(nums);
         int i = 0 ;
