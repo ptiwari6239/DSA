@@ -1,7 +1,8 @@
 public class Binarytree {
-    private int key;
-    private Binarytree left;
-    private Binarytree right;
+    int key;
+    Binarytree left;
+        Binarytree right;
+    Binarytree(){}
     Binarytree(int value){
         this.key = value;
     }
