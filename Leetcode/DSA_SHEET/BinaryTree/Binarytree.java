@@ -1,5 +1,5 @@
 public class Binarytree {
-    int key;
+    Integer key;
     Binarytree left;
     Binarytree right;
     Binarytree(){}
