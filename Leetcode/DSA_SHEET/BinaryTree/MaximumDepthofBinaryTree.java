@@ -2,12 +2,14 @@
 // leetcode question:- 104 https://leetcode.com/problems/maximum-depth-of-binary-tree/
 public class MaximumDepthofBinaryTree {
     public static void main(String[] args){
-        System.out.println("hello world !!");
+        Binarytree root = new Binarytree(10);
+        root.left = new Binarytree(20);
+        root.left.right = new Binarytree(30);
     }
-   public static void main(Integer[] args){
-       System.out.println("integer wala main ");
-   }
-   public static void main(Double[] args){
-       System.out.println("double wala main");
-   }
+    static int maxDepth(Binarytree root){
+        if(root == null)
+            return 0;
+        return Math.max(maxDepth(root.left),maxDepth(root.right)) +1;
+    }
+
 }
