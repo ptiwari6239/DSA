@@ -2,8 +2,8 @@
 // leetcode question : - 1572 https://leetcode.com/problems/matrix-diagonal-sum/submissions/934365004/
 public class MatrixDiagonalSum {
     public static void main(String[] args) {
-        int[][] arr = {{7,3,1,9},{3,4,6,9,},{6,9,6,6},{9,5,8,5}};
-        System.out.println(digonalSum(arr));
+        int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
+        System.out.println(Dsum(arr));
 
     }
     static int digonalSum(int[][] mat){
@@ -40,6 +40,25 @@ public class MatrixDiagonalSum {
                 j++;
             else{
                 sum+=mat[i][mat.length-1-j];
+                j++;
+            }
+        }
+        return sum ;
+    }
+    // different logic 
+    static int Dsum(int[][] mat){
+        int sum = 0 ;
+        int j = 0 ;
+        int ptr = mat.length - 1  ;
+        for(int i = 0  ; i < mat.length ; i++){
+            if(j==ptr){
+                sum+=mat[i][j];
+                ptr--;
+                j++;
+            }
+            else {
+                sum+=mat[i][j] + mat[i][ptr];
+                ptr--;
                 j++;
             }
         }

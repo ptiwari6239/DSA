@@ -8,20 +8,21 @@ import java.util.List;
 // and if not than move forward
 public class RemoveLinkedListElements {
     public static void main(String[] args){
-        LinkedList head = new LinkedList(1);
-        head.next = new LinkedList(2);
-        head.next.next = new LinkedList(6);
-        head.next.next.next = new LinkedList(6);
-        head.next.next.next.next = new LinkedList(6 );
-        head.next.next.next.next.next = new LinkedList(5);
-        head.next.next.next.next.next.next = new LinkedList(7);
-
-        LinkedList nnew = removeElement(head,6);
-        LinkedList ptr = nnew;
-        while(ptr != null){
-            System.out.println(ptr.val);
-            ptr = ptr.next;
-        }
+        System.out.println(Math.pow(2,3));
+//        LinkedList head = new LinkedList(1);
+//        head.next = new LinkedList(2);
+//        head.next.next = new LinkedList(6);
+//        head.next.next.next = new LinkedList(6);
+//        head.next.next.next.next = new LinkedList(6 );
+//        head.next.next.next.next.next = new LinkedList(5);
+//        head.next.next.next.next.next.next = new LinkedList(7);
+//
+//        LinkedList nnew = removeElement(head,6);
+//        LinkedList ptr = nnew;
+//        while(ptr != null){
+//            System.out.println(ptr.val);
+//            ptr = ptr.next;
+//        }
 
     }
     static LinkedList removeElement(LinkedList head, int val){
